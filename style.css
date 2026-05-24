@@ -166,3 +166,45 @@ footer {
     padding: 25px 0;
     border-top: 4px solid #bfa15f;
 }
+
+/* --- MOBİL UYUMLULUK (RESPONSIVE TASARIM) --- */
+@media (max-width: 768px) {
+    /* Menü ve Logoyu alt alta hizala */
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    /* Logonun altından biraz boşluk bırak */
+    header .logo {
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+
+    /* Menü linkleri ekrana sığmazsa alt satıra geçsin */
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    /* Ana başlıktaki yazıyı telefon için biraz küçültelim */
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    /* HİZMET KARTLARINI ALT ALTA DİZ (En önemli kısım) */
+    .hizmet-kartlari {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
